@@ -1,140 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>home_work</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
    <header>
-      <div class="container flex">
-         <div class="logo">
-            <img src="./img/logo.svg" alt="logo">
-         </div>
-         <nav>
-            <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Tech Stack</a></li>
-               <li><a href="#">Projects</a></li>
-               <li><a href="#">Contact</a></li>
-            </ul>
-         </nav>
-         <div class="social_media">
-            <img src="./img/github.svg" alt="github">
-            <img src="./img/twitter.svg" alt="twitter">
-            <img src="./img/linkedin.svg" alt="linkedin">
+      <div class="container">
+         <div class="row justify-content-around justify-content-sm-center align-items-center">
+            <div class="col-auto col-sm col-lg-auto logo order-1">
+               <img src="./img/logo.svg" alt="logo">
+            </div>
+            <div class="col-12 col-lg order-3 order-lg-2">
+               <nav class="navbar navbar-expand-lg m-0">
+                  <div class="container-fluid">
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav justify-content-evenly justify-content-xl-end">
+                           <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#desktop">About</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#stack">Tech Stack</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#project">Projects</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#other">Contact</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+            <div class="col-auto order-2 order-lg-3">
+               <div class="social_media">
+                  <a href="https://github.com/kudriakova21" target="_blank"><img src="./img/github.svg" alt="github"></a>
+                  <img src="./img/twitter.svg" alt="twitter">
+                  <img src="./img/linkedin.svg" alt="linkedin">
+               </div>
+            </div>
          </div>
       </div>
    </header>
    <main>
       <section class="greetings">
-         <div class="container flex">
-            <h1>Hi 👋,<br>My name is<br><span>Pavan MG</span><br>I build things for web</h1>
-            <div class="main_photo">
-               <img src="./img/photo.svg" alt="photo">
+         <div class="container">
+            <div class="row justify-content-center align-items-center">
+               <div class="col-12 col-sm">
+                  <h1 class="mb-3 mb-sm-0">Hi 👋, <br>My name is<br> <span>Viktoriia Kudriakova</span> <br>I build things for web
+                  </h1>
+               </div>
+               <div class="col-auto">
+                  <div class="main_photo">
+                     <img src="./img/photo.jpg" alt="photo">
+                  </div>
+               </div>
             </div>
          </div>
       </section>
-      <section class="desktop">
-         <div class="container">
-            <div class="info">
-               <div class="about">
+      <section class="desktop" id="desktop">
+         <div class="container info">
+            <div class="row about">
+               <div class="col">
                   <p class="h2">About Me</p>
-                  <p class="about_text">The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</p>
+                  <p class="about__text">The Generator App is an online tool that helps you to export ready-made
+                     templates ready to work as your future website. It helps you to combine slides, panels and other
+                     components and export it as a set of static files: HTML/CSS/JS.</p>
                </div>
-               <div class="experience">
+            </div>
+            <div class="row experience">
+               <div class="col">
                   <p class="h2">Work Experience</p>
-                  <div class="info_container">
-                     <div class="first">
-                        <div class="subtitle">Junior Web Developer</div>
-                        <div class="time">Full Time</div>
-                     </div>
-                     <div class="details flex">
-                        <div class="flex w50">
-                           <div><span class="detail_item place">Dr. Rajkumar’s Learning App</span></div>
-                           <div><span class="detail_item city">Bengaluru</span></div>
-                        </div>
-                        <div><span class="detail_item date">Sep 2021 - Dec 2021</span></div>
-                     </div>
-                  </div>
-                  <div class="info_container">
-                     <div class="first">
-                        <div class="subtitle">Web Development Intern</div>
-                        <div class="time">Internship</div>
-                     </div>
-                     <div class="details flex">
-                        <div class="flex w50">
-                           <div><span class="detail_item place">IonPixelz Web Solutions</span></div>
-                           <div><span class="detail_item city">Bengaluru</span></div>
-                        </div>
-                        <div><span class="detail_item date">Sep 2021 - Dec 2021</span></div>
-                     </div>
-                  </div>
-                  <div class="info_container">
-                     <div class="first">
-                        <div class="subtitle">SEO / SEM Specialist</div>
-                        <div class="time">Internship</div>
-                     </div>
-                     <div class="details flex">
-                        <div class="flex w50">
-                           <div><span class="detail_item place">HAAPS</span></div>
-                           <div><span class="detail_item city">Bengaluru</span></div>
-                        </div>
-                        <div><span class="detail_item date">Sep 2021 - Dec 2021</span></div>
-                     </div>
-                  </div>
-                  
                </div>
-               <div class="education">
-                  <p class="h2">Education</p>
-                  <div class="info_container">
-                     <div class="first">
-                        <div class="subtitle">Bachelor in Electronics & Communication</div>
-                        <div class="time">Full Time</div>
+               <div class="col-12 experience__item">
+                  <div class="experience__position">
+                     <div class="subtitle">Marketing specialist</div>
+                     <div class="time">Full Time</div>
+                  </div>
+                  <div class="details d-flex flex-wrap flex-sm-nowrap justify-content-center justify-content-sm-between">
+                     <div class="d-flex justify-content-between office">
+                        <div><span class="detail_item place">VKiK</span></div>
+                        <div><span class="detail_item city">Svitlovodsk</span></div>
                      </div>
-                     <div class="details flex">
-                        <div><span class="detail_item place">Bangalore Instutute of Technology</span></div>
-                        <div><span class="detail_item date">Aug 2015 - Dec 2020</span></div>
+                     <div><span class="detail_item date">Jun 2013 - May 2014</span></div>
+                  </div>
+               </div>
+               <div class="col-12 experience__item">
+                  <div class="experience__position">
+                     <div class="subtitle">Administrator</div>
+                     <div class="time">Full Time</div>
+                  </div>
+                  <div class="details d-flex flex-wrap flex-sm-nowrap justify-content-center justify-content-sm-between">
+                     <div class="d-flex justify-content-between office">
+                        <div><span class="detail_item place">Hostel "Vagon"</span></div>
+                        <div><span class="detail_item city">Svitlovodsk</span></div>
+                     </div>
+                     <div><span class="detail_item date">Jul 2014 - Aug 2016</span></div>
+                  </div>
+               </div>
+               <div class="col-12 experience__item">
+                  <div class="experience__position">
+                     <div class="subtitle">Archivist</div>
+                     <div class="time">Full Time</div>
+                  </div>
+                  <div class="details d-flex flex-wrap flex-sm-nowrap justify-content-center justify-content-sm-between">
+                     <div class="d-flex justify-content-between office">
+                        <div><span class="detail_item place">Privat Bailiff</span></div>
+                        <div><span class="detail_item city">Kremenchuk</span></div>
+                     </div>
+                     <div><span class="detail_item date">Dec 2020 - Nov 2022</span></div>
+                  </div>
+               </div>
+            </div>
+            <div class="row education">
+               <div class="col">
+                  <p class="h2">Education</p>
+               </div>
+               <div class="education__item">
+                  <div class="first">
+                     <div class="subtitle">Bachelor in Marketing</div>
+                     <div class="time">Full Time</div>
+                  </div>
+                  <div class="details d-flex flex-wrap flex-sm-nowrap justify-content-around justify-content-sm-between">
+                     <div><span class="detail_item place">Kremenchuk National University</span></div>
+                     <div><span class="detail_item date">Sep 2008 - Jun 2013</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <section class="stack" id="stack">
+         <div class="container">
+            <div class="row title">
+               <div class="col-12">
+                  <p class="h2">My Tech Stack</p>
+                  <div class="subtitle">Technologies I’ve been working with recently</div>
+               </div>
+            </div>
+            <div class="row justify-content-center justify-content-sm-around justify-content-md-between align-items-center technology">
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/html.svg" alt="html5">
+               </div>
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/css.svg" alt="css3">
+               </div>
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/js.svg" alt="js">
+               </div>
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/react.svg" alt="react">
+               </div>
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/logo5.svg" alt="logo5">
+               </div>
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/bootstrap.svg" alt="bootstrap">
+               </div>
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/logo7.svg" alt="logo7">
+               </div>
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/sass.svg" alt="sass">
+               </div>
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/git.svg" alt="git">
+               </div>
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/logo10.svg" alt="logo10">
+               </div>
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/vs.svg" alt="vs">
+               </div>
+               <div class="col-4 col-sm-auto col-md-3 col-lg-auto stack__item">
+                  <img src="./img/stack/github.svg" alt="github">
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="project" id="project">
+         <div class="container">
+            <div class="row title">
+               <div class="col-12">
+                  <p class="h2">Projects</p>
+                  <div class="subtitle">Things I’ve built so far</div>
+               </div>
+            </div>
+            <div class="row justify-content-around justify-content-sm-between project-row">
+               <div class="col-auto col-sm-6 col-lg-4 col-xxl-auto project__item">
+                  <div class="project__card">
+                     <img src="./img/projects/project1.svg" alt="project1">
+                     <div class="project__info">
+                        <p class="project__title">Project Title goes here</p>
+                        <p class="project__text">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+                        <p class="project__stack"><span>Tech stack:</span> HTML , JavaScript, SASS, React</p>
+                        <div class="d-flex justify-content-around project__links">
+                           <a href="#" class="project__link preview">Live Preview</a>
+                           <a href="#" class="project__link github">View Code</a>
+                        </div>
                      </div>
                   </div>
+               </div>
+               <div class="col-auto col-sm-6 col-lg-4 col-xxl-auto project__item">
+                  <div class="project__card">
+                     <img src="./img/projects/project2.svg" alt="project2">
+                     <div class="project__info">
+                        <p class="project__title">Project Title goes here</p>
+                        <p class="project__text">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+                        <p class="project__stack"><span>Tech stack:</span> HTML , JavaScript, SASS, React</p>
+                        <div class="d-flex justify-content-around project__links">
+                           <a href="#" class="project__link preview">Live Preview</a>
+                           <a href="#" class="project__link github">View Code</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-auto col-sm-6 col-lg-4 col-xxl-auto project__item">
+                  <div class="project__card">
+                     <img src="./img/projects/project3.svg" alt="project3">
+                     <div class="project__info">
+                        <p class="project__title">Project Title goes here</p>
+                        <p class="project__text">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+                        <p class="project__stack"><span>Tech stack:</span> HTML , JavaScript, SASS, React</p>
+                        <div class="d-flex justify-content-around project__links">
+                           <a href="#" class="project__link preview">Live Preview</a>
+                           <a href="#" class="project__link github">View Code</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-auto col-sm-6 col-lg-4 col-xxl-auto project__item">
+                  <div class="project__card">
+                     <img src="./img/projects/project4.svg" alt="project4">
+                     <div class="project__info">
+                        <p class="project__title">Project Title goes here</p>
+                        <p class="project__text">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+                        <p class="project__stack"><span>Tech stack:</span> HTML , JavaScript, SASS, React</p>
+                        <div class="d-flex justify-content-around project__links">
+                           <a href="#" class="project__link preview">Live Preview</a>
+                           <a href="#" class="project__link github">View Code</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-auto col-sm-6 col-lg-4 col-xxl-auto project__item">
+                  <div class="project__card">
+                     <img src="./img/projects/project5.svg" alt="project5">
+                     <div class="project__info">
+                        <p class="project__title">Project Title goes here</p>
+                        <p class="project__text">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+                        <p class="project__stack"><span>Tech stack:</span> HTML , JavaScript, SASS, React</p>
+                        <div class="d-flex justify-content-around project__links">
+                           <a href="#" class="project__link preview">Live Preview</a>
+                           <a href="#" class="project__link github">View Code</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-auto col-sm-6 col-lg-4 col-xxl-auto project__item">
+                  <div class="project__card">
+                     <img src="./img/projects/project6.svg" alt="project6">
+                     <div class="project__info">
+                        <p class="project__title">Project Title goes here</p>
+                        <p class="project__text">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+                        <p class="project__stack"><span>Tech stack:</span> HTML , JavaScript, SASS, React</p>
+                        <div class="d-flex justify-content-around project__links">
+                           <a href="#" class="project__link preview">Live Preview</a>
+                           <a href="#" class="project__link github">View Code</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="other" id="other">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <p class="e-mail">For any questions please mail us: <br><span>wkudriakova@gmail.com</span></p>
                </div>
             </div>
          </div>
       </section>
    </main>
    <footer>
-      <div class="container flex footer_row_1">
-         <div class="logo">
-            <img src="./img/logo1.svg" alt="logo">
+      <div class="container">
+         <div class="row justify-content-around justify-content-sm-between footer_row_1">
+            <div class="col-12 col-sm-auto text-center text-sm-left logo">
+               <img src="./img/logo1.svg" alt="logo">
+            </div>
+            <div class="col contacts d-flex justify-content-center justify-content-lg-end align-items-center">
+               <div class="tel">+91 12345 09876</div>
+               <div class="email">wkudriakova@gmail.com</div>
+            </div>
+            <div class="col-auto social_media">
+               <img src="./img/github.svg" alt="github">
+               <img src="./img/twitter.svg" alt="twitter">
+               <img src="./img/linkedin.svg" alt="linkedin">
+            </div>
          </div>
-         <div class="contacts flex">
-            <div class="tel">+91 12345 09876</div>
-            <div class="email">info@example.com</div>
+         <div class="row">
+            <div class="col">
+               <hr>
+            </div>
          </div>
-         <div class="social_media">
-            <img src="./img/github.svg" alt="github">
-            <img src="./img/twitter.svg" alt="twitter">
-            <img src="./img/linkedin.svg" alt="linkedin">
+         <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-lg order-2 order-lg-1">
+               <nav class="navbar navbar-expand-lg mx-0">
+                  <div class="container-fluid px-0">
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavFooter"
+                        aria-controls="navbarNavFooter" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNavFooter">
+                        <ul class="navbar-nav">
+                           <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">About</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Tech Stack</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Projects</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Contact</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+            <div class="col-auto order-1 order-lg-2 copyright">Designed and built by <span class="creator">Viktoriia Kudriakova</span> with
+               <span class="love">Love</span> & <span class="coffee">Coffee</span>
+            </div>
          </div>
-      </div>
-      <div class="container"><hr></div>
-      <div class="container flex footer_row_2">
-         <nav>
-            <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Tech Stack</a></li>
-               <li><a href="#">Projects</a></li>
-               <li><a href="#">Contact</a></li>
-            </ul>
-         </nav>
-         <div class="copyright">Designed and built by <span class="pavan">Pavan MG</span> with <span class="love">Love</span> & <span class="coffee">Coffee</span></div>
       </div>
    </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>
