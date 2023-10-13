@@ -1,0 +1,66 @@
+.darkmode .switch {
+   background: #333;
+   box-shadow: inset 0 0 4px 1px rgba(255, 255, 255, .4);
+}
+
+.darkmode .switch__btn {
+   background: #333;
+   left: calc(100% - 20px);
+   box-shadow: 0 0 2px 2px rgba(255, 255, 255, .4);
+}
+
+.darkmode .switch__btn svg path {
+   fill: #fff
+}
+
+.darkmode, .darkmode header, .darkmode main, .darkmode footer {
+   background: #000;
+   color: #a7a7a7;
+}
+
+.darkmode .navbar-expand-lg .navbar-nav .nav-link,
+.darkmode .contacts {
+   color: #a7a7a7;
+}
+
+.darkmode svg path {
+   fill: #a7a7a7;
+}
+
+.darkmode h1,
+.darkmode .h2,
+.darkmode .project__title,
+.darkmode .project__stack {
+   color: #ccc;
+}
+
+.darkmode .project__link {
+   color: #fff;
+}
+
+.darkmode .stack svg path {
+   fill: #fff;
+}
+
+.darkmode .project__card {
+   background: #363636;
+}
+
+.darkmode .github {
+   background: url("./img/github-white.svg") no-repeat left center;
+   background-size: contain;
+}
+
+.darkmode .preview {
+   background: url("./img/projects/link-white.svg") no-repeat left center;
+}
+
+.darkmode .tel{
+   background: url("./img/phone-light.svg") no-repeat left center;
+   background-size: 10%;
+}
+
+.darkmode .email{
+   background: url("./img/email-light.svg") no-repeat left center;
+   background-size: 10%;
+}

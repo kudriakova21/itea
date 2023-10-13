@@ -1,15 +1,16 @@
-*{
+* {
    margin: 0;
    padding: 0;
-   box-sizing:border-box;
+   box-sizing: border-box;
 }
 
-body{
+body {
    color: #666;
    font-family: 'Poppins';
+   background: #fff;
 }
 
-header{
+header {
    width: 100%;
    min-height: 100px;
    padding: 20px 0;
@@ -19,15 +20,15 @@ header{
    z-index: 1;
 }
 
-section{
+section {
    margin-bottom: 50px;
 }
 
-.logo img{
+.logo img {
    max-width: 100%;
 }
 
-nav{
+nav {
    margin: 0 50px;
 }
 
@@ -50,29 +51,30 @@ nav{
    color: #666;
 }
 
-.social_media{
+.social_media {
    display: flex;
    gap: 20px;
-}
-
-header .social_media{
-   gap: 5px;
    justify-content: flex-end;
 }
 
-header .social_media > *{
-   max-width: calc((100% - 10px) / 3);
-}
-
-header .social_media a > img {
+.social_media svg {
    max-width: 100%;
 }
 
-main{
-   margin-top: 180px;
+header .social_media>* {
+   max-width: calc((100% - 10px) / 3);
 }
 
-h1{
+header .social_media a>img {
+   max-width: 100%;
+}
+
+main {
+   margin-top: 180px;
+   background: #fff;
+}
+
+h1 {
    font-size: clamp(29px, 9vw, 50px);
    line-height: clamp(1.4em, 12vw, 1.5em);
    font-weight: 700;
@@ -82,28 +84,29 @@ h1{
    color: #42446E;
 }
 
-h1 span, .e-mail span{
-   color: transparent;    
-	-webkit-background-clip: text;
-	background-clip: text;
+h1 span,
+.e-mail span {
+   color: transparent;
+   -webkit-background-clip: text;
+   background-clip: text;
    background-image: linear-gradient(to right, #00C0FD 0%, #E70FAA 150%);
 }
 
-.main_photo img{
+.main_photo img {
    max-width: 296px;
    border-radius: 50%;
    padding: 9px;
    background: linear-gradient(to bottom, #E70FAA, #00C0FD)
 }
 
-.about__text{
+.about__text {
    margin: 38px 0;
    font-size: 18px;
    line-height: 26px;
    letter-spacing: 0px;
 }
 
-.h2{
+.h2 {
    font-size: clamp(32px, 8vw, 42px);
    font-weight: 700;
    line-height: 52px;
@@ -113,7 +116,8 @@ h1 span, .e-mail span{
    margin-bottom: 38px;
 }
 
-.experience__item, .education__item {
+.experience__item,
+.education__item {
    position: relative;
    padding-bottom: 26px;
    border-bottom: 2px solid #EBEAED;
@@ -124,21 +128,21 @@ h1 span, .e-mail span{
    margin-bottom: 0;
 }
 
-.subtitle{
+.subtitle {
    font-size: clamp(14px, 4vw, 18px);
    line-height: 28px;
    letter-spacing: 1px;
 }
 
-.desktop .subtitle{
+.desktop .subtitle {
    max-width: calc(100% - 100px);
 }
 
-section:not(.desktop) .subtitle{
+section:not(.desktop) .subtitle {
    text-align: center;
 }
 
-.time{
+.time {
    font-size: 9px;
    font-weight: 600;
    line-height: 26px;
@@ -154,7 +158,7 @@ section:not(.desktop) .subtitle{
    text-align: center;
 }
 
-.details{
+.details {
    font-size: 12px;
    font-weight: 500;
    line-height: 28px;
@@ -171,57 +175,57 @@ section:not(.desktop) .subtitle{
    width: 100%;
 }
 
-.detail_item{
+.detail_item {
    padding-left: 20px;
 }
 
-.place{
+.place {
    background: url("./img/office.svg") no-repeat left center;
 }
 
-.city{
+.city {
    background: url("./img/location.svg") no-repeat left center;
 }
 
-.date{
+.date {
    background: url("./img/calendar.svg") no-repeat left center;
 }
 
-.stack__item{
+.stack__item {
    text-align: center;
 }
 
-.stack__item img{
+.stack__item>* {
    max-width: 88px;
    width: 100%;
 }
 
-.technology{
+.technology {
    margin-top: 60px;
    row-gap: 60px;
 }
 
-.project-row{
+.project-row {
    margin-top: 60px;
    row-gap: 60px;
 }
 
-.project__card{
+.project__card {
    filter: drop-shadow(2px 2px 100px rgba(0, 0, 0, 0.2));
    border-radius: 20px;
    background: #fff;
    max-width: 370px;
 }
 
-.project__card img{
+.project__card img {
    max-width: 100%;
 }
 
-.project__info{
+.project__info {
    padding: 30px 15px 25px 15px;
 }
 
-.project__title{
+.project__title {
    color: #000;
    text-align: center;
    font-size: 24px;
@@ -229,23 +233,23 @@ section:not(.desktop) .subtitle{
    line-height: 92.857%;
 }
 
-.project__text{
+.project__text {
    font-weight: 300;
    line-height: 1.4;
 }
 
-.project__stack{
+.project__stack {
    color: #42446E;
    font-size: 13px;
    font-weight: 300;
    line-height: 1.85;
 }
 
-.project__stack span{
+.project__stack span {
    font-weight: bold;
 }
 
-.project__link{
+.project__link {
    color: #000;
    line-height: 1.43;
    text-decoration: none;
@@ -253,20 +257,21 @@ section:not(.desktop) .subtitle{
    padding-left: 30px;
 }
 
-.project__link:hover{
+.project__link:hover {
    text-decoration: underline;
 }
 
-.preview{
+.preview {
    background: url("./img/projects/link.svg") no-repeat left center;
 }
 
-.github{
+.github {
    background: url("./img/github.svg") no-repeat left center;
    background-size: contain;
+   transition: 0.3s;
 }
 
-.e-mail{
+.e-mail {
    color: #1E0E62;
    text-align: center;
    font-family: DM Sans;
@@ -277,8 +282,9 @@ section:not(.desktop) .subtitle{
    margin: 25px 0;
 }
 
-footer{
+footer {
    margin-bottom: 30px;
+   background: #fff;
 }
 
 .footer_row_1 {
@@ -286,10 +292,10 @@ footer{
 }
 
 footer .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0;
+   padding: 0;
 }
 
-.contacts{
+.contacts {
    font-family: DM Sans;
    font-size: 18px;
    line-height: 26px;
@@ -298,100 +304,149 @@ footer .navbar-expand-lg .navbar-nav .nav-link {
    color: #42446E;
    flex-wrap: wrap;
    justify-content: center;
-   max-width: 250px;
+   max-width: 265px;
 }
 
-.contacts div{
+.contacts div {
    padding-left: 25px;
+   padding-right: 0.5rem;
 }
 
-.tel{
+.tel {
    background: url("./img/phone.svg") no-repeat left center;
    background-size: 10%;
 }
 
-.email{
+.email {
    background: url("./img/email.svg") no-repeat left center;
    background-size: 10%;
 }
 
-hr{
+hr {
    height: 6px;
    background: #666;
    margin: 25px 0;
    opacity: 1;
+   color: #666;
 }
 
-.copyright{
+.copyright {
    font-size: 16px;
    line-height: 26px;
    letter-spacing: 0px;
    text-align: center;
 }
 
-.copyright span{
-   color: transparent;    
-	-webkit-background-clip: text;
-	background-clip: text;
-   
+.copyright span {
+   color: transparent;
+   -webkit-background-clip: text;
+   background-clip: text;
+
 }
 
-.creator{
+.creator {
    background-image: linear-gradient(to right, #7267D3 0%, #9A4AC6 100%);
 }
 
-.love{
+.love {
    background-image: linear-gradient(to right, #B039BE 0%, #C12CB7 100%);
 }
 
-.coffee{
+.coffee {
    background-image: linear-gradient(to right, #CD24B4 0%, #E610AA 100%);
 }
 
 
 
-@media(min-width: 576px){
-   nav{
+.switch {
+   width: 32px;
+   height: 16px;
+   border-radius: 8px;
+   background: #ddd;
+   box-shadow: inset 0 0 4px 1px rgba(0, 0, 0, .4);
+   position: absolute;
+   top: 5px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.switch:hover {
+   cursor: pointer;
+}
+
+.switch__btn {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   border: none;
+   background: #fff;
+   background-size: contain;
+   box-shadow: 0 0 2px 2px rgba(0, 0, 0, .4);
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+   transition: 0.3s;
+}
+
+.switch__btn > svg {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.switch-duration {
+   transition: 0.3s;
+}
+
+
+
+
+
+@media(min-width: 576px) {
+   nav {
       flex-grow: 0;
       margin: 0 10px;
    }
 
-   .footer_row_2 nav{
+   .footer_row_2 nav {
       margin: 0;
    }
 
-   nav ul, .social_media{
+   nav ul,
+   .social_media {
       gap: 10px;
    }
 
-   nav ul li a{
+   nav ul li a {
       font-size: 12px;
    }
 
-   .greetings .container{
+   .greetings .container {
       gap: 10px;
    }
 
-   h1{
+   h1 {
       font-size: 28px;
       line-height: 1.2;
       text-align: left;
    }
 
-   .main_photo img{
+   .main_photo img {
       max-width: 200px;
    }
 
-   .h2{
+   .h2 {
       text-align: left;
    }
-   
+
    .subtitle {
       font-size: 18px;
       max-width: 100%;
    }
 
-   section:not(.desktop) .subtitle{
+   section:not(.desktop) .subtitle {
       text-align: left;
    }
 
@@ -407,43 +462,39 @@ hr{
       max-width: 100%;
    }
 
-   .e-mail{
+   .e-mail {
       font-size: 36px;
       margin: 60px 0;
    }
 
-   footer{
+   footer {
       margin-bottom: 50px;
-   }
-
-   header .social_media{
-      gap: 20px;
    }
 }
 
-@media(min-width:768px){
-   header nav{
+@media(min-width:768px) {
+   header nav {
       flex-grow: 1;
       margin: 0 30px;
    }
 
-   nav ul{
+   nav ul {
       gap: 20px;
    }
 
-   nav ul li a{
+   nav ul li a {
       font-size: 16px;
    }
 
-   .greetings .container{
+   .greetings .container {
       gap: 15px;
    }
 
-   h1{
+   h1 {
       font-size: 40px;
    }
 
-   .main_photo img{
+   .main_photo img {
       max-width: 260px;
    }
 
@@ -455,15 +506,11 @@ hr{
       max-width: 50%;
    }
 
-   .e-mail{
+   .e-mail {
       font-size: 44px;
    }
 
-   .footer_row_1{
-      gap: 50px;
-   }
-
-   footer hr{
+   footer hr {
       margin: 50px 0;
    }
 
@@ -472,12 +519,16 @@ hr{
    }
 }
 
-@media(min-width: 992px){
-   header .social_media{
+@media(min-width: 992px) {
+   header .social_media {
       justify-content: flex-start;
    }
 
-   h1{
+   .social_media {
+      gap: 20px;
+   }
+
+   h1 {
       font-size: 56px;
    }
 
@@ -485,11 +536,11 @@ hr{
       max-width: 350px;
    }
 
-   .info > * {
+   .info>* {
       max-width: 710px;
    }
 
-   .contacts{
+   .contacts {
       gap: 50px;
       flex-wrap: nowrap;
       max-width: 100%;
@@ -499,18 +550,19 @@ hr{
       max-width: 50%;
    }
 
-   .technology{
+   .technology {
       column-gap: 57px;
    }
-   .e-mail{
+
+   .e-mail {
       font-size: 58px;
    }
 
-   section:not(.greetings){
+   section:not(.greetings) {
       padding-top: 100px;
    }
 
-   section:not(.other){
+   section:not(.other) {
       margin-bottom: 0;
    }
 }
@@ -528,17 +580,17 @@ hr{
       font-size: 58px;
    }
 
-   .container{
+   .container {
       max-width: 1200px;
    }
-   
+
    .technology {
       column-gap: 75px;
    }
 }
 
 @media(min-width: 1400px) {
-   .container{
+   .container {
       max-width: 1320px;
    }
 
@@ -548,5 +600,31 @@ hr{
 
    .project__card {
       max-width: 370px;
+   }
+}
+
+@media(min-width: 576px) and (max-width: 767.9px) {
+   .contacts {
+      font-size: 16px;
+   }
+}
+
+@media(max-width: 575.9px) {
+   .social_media {
+      gap: 5px;
+   }
+
+   .navmenu {
+      max-width: 100px;
+   }
+
+   .navbar-expand-lg .navbar-nav .nav-link {
+      font-size: 14px;
+   }
+}
+
+@media(max-width: 418.9px) {
+   .footer_row_1 {
+      justify-content: center !important;
    }
 }
